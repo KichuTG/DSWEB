@@ -11,7 +11,7 @@ class Telegram:
     BOT_TOKEN = getenv("BOT_TOKEN", "5289869101:AAHNeUR-S6yun12CzJnUWcqVHbMiLpc2QL8")
     PORT = int(getenv("PORT", 8080))
     SESSION_STRING = getenv("SESSION_STRING", "")
-    BASE_URL = getenv("BASE_URL", "").rstrip('/')
+    BASE_URL = getenv("BASE_URL", "dramaship.koyeb.app").rstrip('/')
     DATABASE_URL = getenv("DATABASE_URL", "mongodb+srv://SurfTG:SurfTG@surftg.utrcg.mongodb.net/?retryWrites=true&w=majority&appName=SurfTG")
     AUTH_CHANNEL = [channel.strip() for channel in getenv("AUTH_CHANNEL", "").split(",") if channel.strip()]
     THEME = getenv("THEME", "quartz").lower()
