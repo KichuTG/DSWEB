@@ -13,7 +13,7 @@ class Telegram:
     SESSION_STRING = getenv("SESSION_STRING", "")
     BASE_URL = getenv("BASE_URL", "dramaship.koyeb.app").rstrip('/')
     DATABASE_URL = getenv("DATABASE_URL", "mongodb+srv://SurfTG:SurfTG@surftg.utrcg.mongodb.net/?retryWrites=true&w=majority&appName=SurfTG")
-    AUTH_CHANNEL = [channel.strip() for channel in getenv("AUTH_CHANNEL", "-1002293731628").split(",") if channel.strip()]
+    AUTH_CHANNEL = [channel.strip() for channel in getenv("AUTH_CHANNEL", "-1001547910421").split(",") if channel.strip()]
     THEME = getenv("THEME", "quartz").lower()
     USERNAME = getenv("USERNAME", "")
     PASSWORD = getenv("PASSWORD", "")
